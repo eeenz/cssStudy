@@ -8,6 +8,67 @@
     <title>cssStart</title>
 </head>
 <body>
+    <!-- emmet = vs에 깔려있는 자동완성기능 -->
+    <!--1. 태그만 입력하고 Tab!
+        2. > 자식
+        3. + 형제 
+        4. . 클래스
+        5. # 아이디 
+        
+        ex) header+main+footer
+        : header, main, footer를 모두 형제로 만들기
+        ex) header>h1+nav>a*3>span
+        : header 안 자식 h1, nav 형제를 두고 nav 안 a를 3개 만들고 각 a안에 span을 자식으로 만들기
+        ex) main>section#contents>div.main*3
+        : main 안 section을 아이디 contents를 붙여 생성하고 그 자식으로 main이란 클래스 명의 div를 3개 만들기
+    
+    -->
+    <h1>title</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+        <li>꺽쇠 > * 탭</li>
+        <li>신기신기</li>
+    </ul>
+    <!-- ol>li*3>a -->
+        <li><a href="#">wow</a></li>
+        <li><a href="#">>*></a></li>
+        <li><a href="#">wow신기신기</a></li>
+    </ol>
+    <!-- 형제관계는 + -->
+    <p><span>sdf</span><em>sdfsf</em></p>
+    <!-- .a -->
+    <div class="a">sdf</div>
+    <!-- #b -->
+    <!-- class 와 id는 모든태그에 줄 수 있음 -->
+    <section id="b">sdfsfd</section>
+    <img src="sdfs" alt="sdfsf">
+    <video src="#"></video>
+    <input type="text">
+    <input type="radio" name="" id="">
+    <select name="" id="">
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+    <a href=""></a>
+    <div>
+        <h>
+            <p><em>dlddiddnd</em></p>
+        </h>
+    </div>
+    <div>
+        <h></h>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
     
 </body>
 </html>
