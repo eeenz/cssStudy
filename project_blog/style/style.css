@@ -16,12 +16,12 @@ main .contents {
     font-size: 1.125rem;
     line-height: 36px;
     padding:90px 0 90px 0;
-    font-weight: 200;
+    font-weight: 300;
 }
 main .contents em {
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1.3px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
     padding-bottom: 40px;
     color: #ffffff;
 }

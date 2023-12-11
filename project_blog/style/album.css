@@ -1,5 +1,15 @@
 /* album.html(앨범 소개) 전용 css */
 main {
     height: 100vh;
-    background-color: chocolate;
+    background-color: #ffb169;
+}
+main .container {
+    background-color: blue;
+    display: flex; flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .box {
+    height: 300px; width: 300px;
+    margin-right: 10px;
 }
