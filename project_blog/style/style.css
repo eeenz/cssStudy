@@ -1,51 +1,27 @@
-header {
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color:#524fff;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-}
-header a {
-    line-height: 90px;
-    margin-right: 80px;
-    align-content:center;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-header a:nth-child(3) {
-    
-}
-main {
-    text-align: center;
-    background-color: #111;
-}
+/* index.html main전용 */
 main h1 {
     font-family: 'Nunito', sans-serif;
     color: #524fff;
     padding-top: 150px;
     font-size: 2.5rem;
     letter-spacing: 3px;
-    ;
+    font-weight: 700;
 }
 main .photo {
     margin-top: 50px;
 }
 main .photo img {}
-main .contents em {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1.3px;
-    padding-bottom: 80px;
-    color: #ffffff;
-}
 main .contents {
     color: #ffffff;
     font-size: 1.125rem;
     line-height: 36px;
-    padding:90px 0 130px 0;
+    padding:90px 0 90px 0;
+    font-weight: 200;
 }
-footer {
-    padding: 20px 0 20px 0;
-    text-align: center;
-    line-height: 25px;
+main .contents em {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    padding-bottom: 40px;
+    color: #ffffff;
 }

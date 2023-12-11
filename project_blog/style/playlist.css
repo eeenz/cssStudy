@@ -1,0 +1,44 @@
+/* playlist.html(추천곡 소개) 전용 css */
+main {height: 1100px;}
+main h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #524fff;
+    padding-top: 150px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+main h2 {    
+    color: #524fff;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+main #playList {
+    background-color: #fff;
+    width: 70%;
+    margin: 80px auto 80px;
+}
+main #playList thead {
+    border-bottom:3px solid #524fff;
+}
+main #playList thead tr {}
+main #playList thead tr th {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+main #playList thead tr th:nth-child(1) {width:100px;}
+main #playList thead tr th:nth-child(2) {width:350px;}
+main #playList thead tr th:nth-child(4) {width:100px;}
+main #playList tbody {background-color: #524fff;}
+main #playList tbody tr {}
+main #playList tbody tr th {}
+main #playList tbody tr th img {
+    width: 25px;
+}
+main #playList tbody tr td {
+    padding: 5px;
+}
+main #playList tbody tr td img {
+    width: 30px;
+}
