@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #wrap {}
+        #wrap header {
+            background-color:palegreen;
+            height:80px; text-align: center;
+        }
+        #wrap header * {border: 1px solid red;}
+        #wrap header h1 {}
+        #wrap header nav {display: inline-block;}
+        #wrap header nav .gnb {
+            display:flex; flex-flow: row nowrap;
+        }
+        #wrap header nav .gnb > li {position: relative;}
+        #wrap header nav .gnb > li > a {
+            width:100px; display:block; padding:7px 0;
+        }
+        #wrap header nav .gnb > li .lnb {
+            position:absolute; left: 0;
+        }
+        #wrap header nav .gnb > li .lnb li {}
+        #wrap header nav .gnb > li .lnb li a {}
+        #wrap main {background-color: palevioletred; height:200vh;}
+        #wrap footer {background-color: pink; height: 150px;}
+
+        /* 사이트시작 
+        #wrap {}
+        #wrap header {
+            background-color:palegreen;(완)
+            height: 80px; text-align: center;(완)
+            position:sticky; top:-20px;
+        }
+        #wrap header * {border: 1px solid red;}(완)
+        #wrap header nav {display: inline-block;}
+        #wrap header nav .gnb {
+            display: flex; 
+        }
+        #wrap header nav .gnb > li {
+            position: relative;
+        }
+        #wrap header nav .gnb > li:hover .lnb {display:flex;}
+        #wrap header nav .gnb > li > a {
+            width:100px; display:block; padding:7px 0; (완)
+        }
+        #wrap header nav .gnb > li .lnb {
+            position:absolute; left: 0;
+            display:flex; 
+            width: max-content;
+            display:none; 
+        }
+        #wrap header nav .gnb > li .lnb li {}
+        #wrap header nav .gnb > li .lnb li a {
+            padding: 10px 40px; display: block; 
+        }
+        #wrap main {background-color: palevioletred; height:200vh;}
+        #wrap footer {background-color: pink; height: 150px;}*/
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>로고</h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a>
+                        <ul class="lnb">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li><a href="">sub3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>main</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
