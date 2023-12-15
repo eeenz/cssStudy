@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .btn1 {
+            background-color: palegreen; padding: 30px;
+            transition: all 0.8s; /* 0.8초뒤에 모두 적용됨 all로 한번에 적용할 수 있음 */
+            transition: all 0.5s 2s; /* 앞s는 진행시간 뒤s는 지연시간 */
+            /* transition: background-color 2s; */ /*2초 뒤에 서서히 백그라운드 컬러가 변경됨 */
+            /* transition: padding 1s; */ /* 1초뒤에 패딩값이 명령되므로 아래 기재한 60px이 1초 뒤에 커진다*/
+            /* font-size: 1rem; */ /* 1초뒤에 글씨크기가 아래 기재한 2rem으로 변경됨 */
+        }
+        .btn1:hover {
+            background-color: palevioletred; padding: 60px;
+            font-size: 2rem;
+        }
+        /* ----------- transform -------------- */
+        .box {
+            width:100px; height:100px; background-color: tomato;
+            margin: 10px;
+        }
+        .box1 {
+            /* transform:scale(1.5)  *//* 중심축 기준으로 1.5배 커진다 */
+            /* transform:scaleX(1.5); */ /* X축 기준으로 1.5배 커진다 */
+            transform:scaleX(2); transform-origin:left top; /* 왼쪽위 기준으로 2배 커진다 */ 
+        } 
+        .box2 {transform: rotate(60deg);} /* 60도 만큼 회전한다 */
+        .box3 {transform: skewX(20deg);} /* 20도 만큼 X축으로 기운다 */
+        .box4 {transform: translate(100px, 50px);} /* position의 relective와 같은 역할을 한다 (이동) */
+                                                /* => position:relative; left:100px top:50px; */
+        .box5 {transform:scaleY(1.2) rotate(10deg) translateX(50px);  background-color: aquamarine;}
+        .box6 {transform:translate(300px, 100px) skewY(7.5deg) scaleY(1.8) rotate(40deg); background-color: #f5125e; border-radius: 8px; color: aquamarine; font-size: 2rem; font-weight: 700; border: 4px solid palegreen;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><button type="button" class="btn1">button</button></li>
+        <li><div class="box box1">A</div></li>
+        <li><div class="box box2">B</div></li>
+        <li><div class="box box3">C</div></li>
+        <li><div class="box box4">D</div></li>
+        <li><div class="box box5">E</div></li>
+        <li><div class="box box6">F</div></li>
+    </ul>
+</body>
+</html>
