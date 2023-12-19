@@ -23,32 +23,52 @@
         main #visual #deco {position:relative; width:1200px; margin:0 auto;}
         main #visual #deco .obj {position:absolute;}
 
-        main #visual #deco .obj1 {
+        /* ------------- 아래 animation 쉽게 적용하는 방법 */
+        /* rotate 3,6정방향 +  5,8역방향*/
+        /* rotate */
+/*         main #visual #deco .obj1 {animation: rotate 10s linear alternate-reverse infinite;}
+        main #visual #deco .obj3, main #visual #deco .obj6{animation: rotate 1.5s linear alternate infinite;}
+        main #visual #deco .obj5, main #visual #deco .obj8{animation: rotate 1.5s linear alternate-reverse infinite;} */
+        /* scale 반짝이들*/
+/*         main #visual #deco .obj2, main #visual #deco .obj4, main #visual #deco .obj7, main #visual #deco .obj9 {
+            animation: scale 0.8s linear alternate infinite;
+        } */
+        /* -------------animation 쉽게 적용하는 방법 end*/
+        main #visual #deco .obj1 { /* 책뒷배경 */
             top:170px; left:50%; margin-left:-342px;
+            animation: rotate 10s linear alternate-reverse infinite;
         }
-        main #visual #deco .obj2 {
+        main #visual #deco .obj2 { /* 맨왼쪽 반짝이2 */
             left:0; top:150px;
+            animation: scale 0.8s linear alternate infinite;
         }
-        main #visual #deco .obj3 {
+        main #visual #deco .obj3 { /* 첨성대 */ /* 3,6정방향 */
             left:100px; top:250px;
+            animation: rotate 1.5s linear alternate infinite;
         }
-        main #visual #deco .obj4 {
+        main #visual #deco .obj4 { /* 첨성대밑 반짝이1 */
             left:150px; top:350px;
+            animation: scale 0.8s linear alternate infinite;
         }
-        main #visual #deco .obj5 {
+        main #visual #deco .obj5 { /* 기와집 *//* 5,8역방향 */
             right:0; top:150px;
+            animation: rotate 1.5s linear alternate-reverse infinite;
         }
-        main #visual #deco .obj6 {
+        main #visual #deco .obj6 { /* 하르방 *//* 3,6정방향 */
             right:200px; top:250px;
+            animation: rotate 1.5s linear alternate infinite;
         }
-        main #visual #deco .obj7 {
+        main #visual #deco .obj7 { /* 하르방반짝이 */
             right:200px; top:240px;
+            animation: scale 0.8s linear alternate infinite;
         }
-        main #visual #deco .obj8 {
+        main #visual #deco .obj8 { /* 경복궁 *//* 5,8역방향 */
             left:270px; top:440px;
+            animation: rotate 1.5s linear alternate-reverse infinite;
         }
-        main #visual #deco .obj9 {
+        main #visual #deco .obj9 { /* 오른쪽 하단 반짝이 */
             right:0; top:440px;
+            animation: scale 0.8s linear alternate infinite;
         }
 
         main #book_center {
@@ -69,7 +89,14 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        @keyframes rotate {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(20deg);}
+        }
+        @keyframes scale {
+            0% {transform: scale(1);}
+            100% {transform: scale(1.2);}
+        }
     </style>
 </head>
 <body>

@@ -36,11 +36,20 @@
             display:flex; justify-content:space-between;
             position:absolute; left:0; top:0;
         }
+        /* 메뉴2, 메뉴3 숨기기 */
+        .menu_contents .menu2, .menu_contents .menu3 {display: none;}
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
             border-radius:10px; 
+            transition:border-radius 0.5s; /* border-radius에 자연스럽게 나타나기로 초수 설정 */
         }
-        .menu_contents .menu a:last-child {margin-right:0}
+        .menu_contents .menu a:hover { /* a에 올렸을때 모서리 동그랗게*/
+            border-radius: 50%;
+        }
+        .menu_contents .menu a:hover .info { /* a에 올렸을때 info가 */
+            opacity: 1;
+        }
+        .menu_contents .menu a:last-child {margin-right:0; }
         .menu_contents .menu a img {width:100%;}
         /* 커피정보 */
         .menu_contents .menu .info {
@@ -49,9 +58,12 @@
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
             text-align:center;
+            opacity: 0;  /* 이게 통으로 안보여야 하니까  오페시티 0으로 처리*/
+            transition:opacity 0.5s;  /* opacity에 자연스럽게 나타나기로 초수 설정 */
         }
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
+            color: #fff;   /* => 글자 화이트컬러로 */
             display:block; font-weight: 600;
             line-height:1.5;
         }
